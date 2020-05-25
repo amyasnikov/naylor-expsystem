@@ -1,0 +1,80 @@
+{
+  "hypotheses" : {
+    "Iphone" : {
+      "PH" : 0.25,
+      "e_triplets" : {
+        "1" : [0.05, 0.6],
+        "2" : [0.9,0.5],
+        "3" : [0.001,0.7],
+        "5" : [0.8,0.7],
+        "6" : [0.65,0.5]
+      }
+    },
+    "Smartphone with big screen" : {
+      "PH" : 0.13,
+      "e_triplets" : {
+        "1" : [0.4, 0.65],
+        "2" : [0.3,0.75],
+        "4" : [0.9,0.75],
+        "5" : [0.65,0.7],
+        "6" : [0.95,0.3],
+        "7" : [0.2, 0.7]
+      }
+    },
+    "Flagship phone from well-known vendor (Samsung/Sony/Huawei)" : {
+      "PH" : 0.21,
+      "e_triplets" : {
+        "1" : [0.15, 0.6],
+        "2" : [0.7,0.5],
+        "3" : [0.2,0.6],
+        "5" : [0.8,0.6],
+        "6" : [0.7,0.4]
+      }
+    },
+    "Cheap Phone" : {
+      "PH" : 0.3,
+      "e_triplets" : {
+        "1" : [0.8, 0.25],
+        "2" : [0.3,0.7],
+        "3" : [0.45,0.3],
+        "4" : [0.8,0.7],
+        "5" : [0.6,0.7],
+        "6" : [0.4,0.7],
+        "7" : [0.45,0.7]
+      }
+    },
+    "Push Button Phone" : {
+      "PH" : 0.11,
+      "e_triplets" : {
+        "1" : [0.9, 0.2],
+        "2" : [0.05,0.8],
+        "4" : [0.01,0.9],
+        "5" : [0.1,0.9],
+        "7" : [0.7,0.5]
+      }
+    }
+  },
+  "evidences" : {
+    "1" : {
+      "question" : "Is low phone cost important to you?"
+    },
+    "2" : {
+      "question" : "Is a recognizable phone brand important to you?"
+    },
+    "3" : {
+      "question" : "Is it important for you to customize the firmware?"
+    },
+    "4" : {
+      "question" : "Do you plan to use modern applications: Internet browser, social networks, 3D games?"
+    },
+    "5" : {
+      "question" : "Is the quality of the integrated camera important to you?"
+    },
+    "6" : {
+      "question" : "Do you care about the large screen size?"
+    },
+    "7" : {
+      "question" : "Do you care about the small size of your phone?"
+    }
+  }
+}
