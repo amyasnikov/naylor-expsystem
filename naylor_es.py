@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from typing import Tuple
 from copy import deepcopy
 import json
 from pprint import pprint
@@ -8,9 +9,9 @@ from os.path import isfile
 
 
 
-def linear_inerpolation(point1:tuple, point2:tuple, x:int) -> float:
-    x1,y1 = point1
-    x2,y2 = point2
+def linear_inerpolation(point1: tuple[float float], point2: Tuple[float, float], x: int) -> float:
+    x1, y1 = point1
+    x2, y2 = point2
     return (x2*y1 - x1*y2 + (y2 - y1)*x) / (x2 - x1)
 
 
@@ -32,7 +33,6 @@ def ask_question(question, answers=range(-5,6)):
         answer = int(input(f'{question}: '))
         if answer in answers:
             break
-        print('неверный ввод')
     return answer
 
 
@@ -103,8 +103,7 @@ class KnowledgeDB:
 
 
     # returns resulting best hypos if it exists
-    def get_winner_hypos(self) -> list:
-#        pprint(self.hypotheses)
+    def get_winner_hypos(self) -> List:
         max_of_mins_hypo = max((hypo_name for hypo_name in self.hypotheses),
             key=lambda x:self.hypotheses[x]['P_min'])
         PM = self.hypotheses[max_of_mins_hypo]['P_min']
